@@ -60,7 +60,7 @@ class Tile(models.Model):
     year = models.IntegerField(('year'), choices=year_choice)
     condition = models.CharField(max_length=100,blank=True)
     description = RichTextField(blank=True)
-    tile_photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    tile_photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     tile_photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     tile_photo_2 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     tile_photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
