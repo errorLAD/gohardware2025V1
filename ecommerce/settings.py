@@ -102,17 +102,13 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'go',
-        'USER': 'go_owner',
-        'PASSWORD': 'npg_Y6pakG2ZuWhJ',
-        'HOST': 'ep-solitary-rice-a86dai98-pooler.eastus2.azure.neon.tech',
-        'PORT': '5432',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
+        'NAME': 'koyebdb',
+        'USER': 'koyeb-adm',
+        'PASSWORD': 'npg_swg7i4eLxNdJ',
+        'HOST': 'ep-restless-cell-a2w1340w.eu-central-1.pg.koyeb.app',
+        'OPTIONS': {'sslmode': 'require'},
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
